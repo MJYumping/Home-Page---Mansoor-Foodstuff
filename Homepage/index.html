@@ -5,72 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manzoor</title>
 
+    <!-- importing fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- importing fonts -->
 
+    <!-- connecting css/scss -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- <header>
-        <div id="headerspacer">
-            <img src="images/Manzoor_Logo_OL.png" alt="Manzoor Logo">
-    
-            <nav>
-                <a href=""> HOME </a>
-                <a href=""> PRODUCTS </a>
-                <a href=""> CONTACT US </a>
-                <a href=""> PLACEHOLDER </a>
-            </nav>
-        </div>
-    </header> -->
-
-    <header>
+    <header> 
         <div class="nav-bar">
-          <img src="images/Manzoor_Logo_OL.png" alt="Logo" class="nav-logo">
-          <nav>
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li class="dropdown-container">
-                <span class="dropdown">Product <i class="fa fa-sort-down"></i></span>
-                <div class="dropdown-menu">
-                  <ul>
-                    <li><a href="#">Rice</a></li>
-                    <li><a href="#">Pulses</a></li>
-                    <li><a href="#">Ground Spices</a></li>
-                    <li><a href="#">Whole Spices</a></li>
-                    <li><a href="#">Recipe Mix Spices</a></li>
-                    <li><a href="#">Dry Fruits & Nuts</a></li>
-                  </ul>
-                </div>
-              </li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-          </nav>
-          <span class="icon" onclick="toggleMenu()">&#9776;</span>
+            <img src="images/Manzoor_Logo_OL.png" alt="Logo" class="nav-logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <!-- dropdown list of products -->
+                    <li class="dropdown-container">  
+                        <span class="dropdown">Product <i class="fa fa-sort-down"></i></span>
+                        <div class="dropdown-menu">
+                            <ul>
+                                <li><a href="#">Rice</a></li>
+                                <li><a href="#">Pulses</a></li>
+                                <li><a href="#">Ground Spices</a></li>
+                                <li><a href="#">Whole Spices</a></li>
+                                <li><a href="#">Recipe Mix Spices</a></li>
+                                <li><a href="#">Dry Fruits & Nuts</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <span class="icon" onclick="toggleMenu()">&#9776;</span>
         </div>
-      </header>
+    </header>
+
 
     <main>
+        <!-- Hero Images/Sliding Banner -->
         <section id="banner">
             <div class="slider">
                 <div class="slider-images">
                     <img src="images/whoweare.png" alt="banner1" />
                     <img src="images/featured.png" alt="banner2" />
                     <img src="images/banner.png" alt="banner3" />
+                    <!-- <img src="images/banner.png" alt="banner4" /> -->
                 </div>
             </div>
         </section>
             
+        <!-- WHO WE ARE Section -->
         <section id="whoweare">
-
             <img src="images/banner.png" alt="whoWeArePNG">
             
             <div id="whoweareP">
-                <h1>
+                <h2>
                     WHO WE ARE
-                </h1>
+                </h2>
 
                 <p>
                     Manzoor Food Stuff functions as an established supplier of high-quality dry fruits and lentils that offers genuine and fresh natural products. Manzoor Food Stuff maintains its dedication to quality to deliver nutritious yet tasty products which support healthy living.
@@ -78,7 +72,7 @@
             </div>
         </section>
 
-        
+        <!-- Featured products (3 divs) -->
         <section id="featured">
 
             <div class="div1">
@@ -90,9 +84,9 @@
             <div class="div2 griditem">
                 <img src="images/featured.png" alt="featuredimages">
 
-                <h2>
+                <h1>
                     Almonds
-                </h2>
+                </h1>
 
                 <p>
                     Our premium almonds, handpicked from the finest orchards, offer rich, nutty flavors rooted in tradition. Perfect as a snack or in authentic recipes, they bring heritage to your table.
@@ -102,9 +96,9 @@
             <div class="div3 griditem">
                 <img src="images/sesame.png" alt="featuredimages">
 
-                <h2>
+                <h1>
                     Sesame Seeds
-                </h2>
+                </h1>
 
                 <p>
                     Our premium almonds, handpicked from the finest orchards, offer rich, nutty flavors rooted in tradition. Perfect as a snack or in authentic recipes, they bring heritage to your table.
@@ -114,9 +108,9 @@
             <div class="div4 griditem">
                 <img src="images/featuredbeans.png" alt="featuredimages">
 
-                <h2>
+                <h1>
                     Beans
-                </h2>
+                </h1>
 
                 <p>
                     Our premium almonds, handpicked from the finest orchards, offer rich, nutty flavors rooted in tradition. Perfect as a snack or in authentic recipes, they bring heritage to your table.
@@ -124,20 +118,22 @@
             </div>
         </section>
 
-
+        <!-- Sliders list of products -->
         <section id="productgallery">
 
             <h1>
                 PRODUCT CATEGORIES
             </h1>
-
+            
             <div class="items">
                 <div class="item item0">
-                    <img src="images/rice.jpeg" alt="rice">
-                    <div class="overlay">
+                    <img src="images/rice.jpeg" alt="rice">     <!-- product thumbnails -->
+                    <div class="overlay">                       <!-- slides on hover --> 
                         <div class="overlay-content">
-                            <h3>Rice</h3>
-                            <p>View more details</p>
+                            <h3>RICE</h3>
+                            <a href="#">
+                                <p>View Product Page</p>        <!-- link to product page -->                        
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -146,8 +142,10 @@
                     <img src="images/beans.png" alt="gallerypng">
                     <div class="overlay">
                         <div class="overlay-content">
-                            <h3>Pulses</h3>
-                            <p>View more details</p>
+                            <h3>PULSES</h3>
+                            <a href="#">
+                                <p>View more details</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -156,8 +154,10 @@
                     <img src="images/groundspice.png" alt="gallerypng">
                     <div class="overlay">
                         <div class="overlay-content">
-                            <h3>Ground Spices</h3>
-                            <p>View more details</p>
+                            <h3>GROUND SPICES</h3>
+                            <a href="#">
+                                <p>View more details</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -166,8 +166,10 @@
                     <img src="images/wholespices.png" alt="gallerypng">
                     <div class="overlay">
                         <div class="overlay-content">
-                            <h3>Whole Spices</h3>
-                            <p>View more details</p>
+                            <h3>WHOLE SPICES</h3>
+                            <a href="#">
+                                <p>View more details</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -176,8 +178,10 @@
                     <img src="images/mixspices.png" alt="gallerypng">
                     <div class="overlay">
                         <div class="overlay-content">
-                            <h3>Recipe Mix Spices</h3>
-                            <p>View more details</p>
+                            <h3>RECIPE MIX SPICES</h3>
+                            <a href="#">
+                                <p>View more details</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -186,8 +190,10 @@
                     <img src="images/nuts.png" alt="gallerypng">
                     <div class="overlay">
                         <div class="overlay-content">
-                            <h3>Dry Fruits & Nuts</h3>
-                            <p>View more details</p>
+                            <h3>DRY FRUITS & NUTS</h3>
+                            <a href="#">
+                                <p>View more details</p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -195,6 +201,9 @@
         </section>
 
 
+        <!-- MOVED CUSTOMER TESTIMONIALS TO PRODUCT PAGE -->
+        <!-- MOVED CUSTOMER TESTIMONIALS TO PRODUCT PAGE -->
+        <!-- MOVED CUSTOMER TESTIMONIALS TO PRODUCT PAGE -->
 
         <!-- <section id="testimonialsection">
             <div class="testimonialspacer">
@@ -220,7 +229,7 @@
 
     
 
-
+    <!-- FOOTER SECTION -->
     <footer>
         <div class="footer-container">
 
